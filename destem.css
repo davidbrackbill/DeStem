@@ -1,0 +1,192 @@
+@-moz-document domain("edstem.org") {
+@import url('https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+
+/* TEXT */
+nav,
+/* .split-panel, */
+.disindf-split-panel-sidebar
+,.disindf-content
+,.disindf-tf-body
+{
+    font-family: Inter, "Open Sans", Arial !important;
+}
+
+.disindf-split-panel-sidebar {
+    font-size: 14px
+}
+
+/* SCROLL */
+.discuss-list-view
+,.disindf-content 
+{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(231, 15%, 30%) hsl(231, 15%, 10%);
+}
+
+
+/* BACKGROUND */
+/*up, left */
+nav
+,.appbar-btn-ripple
+,.popup-kind-plain > div/*menu popup */
+{
+    background-color: hsl(231, 15%, 12%) !important;
+}
+
+.header-container
+/*sidebar*/
+,.disindf-content
+/*body*/
+,.pane-placeholder/*default*/
+{
+    background-color: hsl(231, 15%, 10%) !important;
+}
+
+
+/* HEADER */
+.appbar-group.title {
+    display: grid;
+    place-items: center;
+}
+
+.appbar-title > :not(:first-child) {
+    display: none;
+}
+
+.appbar-title > :first-child {
+    color: var(--white);
+    /*     font-size: 18px; */
+}
+
+
+/* MENUBAR */
+.dsbc-online-icon {
+    fill: hsl(0, 0%, 80%) !important;
+}
+
+.disindf-sidebar-embedded-new-thread-layout {
+    max-height: 2rem;
+    min-height: 2rem;
+}
+
+/* SIDEBAR */
+.discuss-new-thread-button {
+    background-color: hsl(231, 12%, 40%, 0%);
+    font-size: 0px;
+}
+
+.discuss-new-thread-button > span {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: -1px !important;
+}
+
+.icon-hamburger {
+    fill: hsl(231, 12%, 100%);
+    /*     background-color: hsl(231, 12%, 40%); */
+    /*     padding: 5px 5px; */
+    /*     border-radius: 6px; */
+}
+
+.discuss-sidebar-search-input {
+    max-height: 30px !important;
+    min-height: 30px !important;
+}
+
+.dssi-input
+,.dissch-bar-input 
+{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.dtl-group-heading {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.discuss-thread-list div {
+    margin-right: 0px;
+}
+
+.icon.dft-count-icon {
+    margin: 0px 5px;
+}
+
+.discuss-feed-thread:hover {
+    background-color: hsl(231, 15%, 20%)
+}
+
+
+.dft-date
+,.dft-box.student
+,span[title="Pinned"]
+,.dft-user
+{
+    display: none;
+}
+
+
+/* GUTTER*/
+/* .disthrb-body-gutter {
+    max-width: 2rem;
+} */
+/* 
+.disthrb-gutter-btn{
+    max-wid
+} */
+/* .disthrb-category {
+    color: var(--grayed) !important;
+}
+ */
+.disthrb-title {
+    /*     margin-left: 2rem; */
+    margin-bottom: .5rem;
+}
+.dissholay-body {
+    /*     padding: 0px 10px 0px 0px; */
+    margin-top: 20px
+}
+
+/* TITLE */
+.disthrb-number {
+    max-width: 5px;
+    max-height: 5px;
+}
+.disthrb-head-layout {
+    margin-top: 1rem
+}
+.disthrb-head-action.pin {
+    display: none;
+}
+
+/* COMMENT AVATARS */
+.comments .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comments .avatar-inner:has(span) {
+    max-width: 1rem;
+    max-height: 1rem;
+}
+.comments .avatar-inner > span {
+    display: none;
+}
+
+/* USER COMMENTS */
+.disthrb-user-name
+,.discom-user-name
+{
+    color: hsl(231, 15%, 90%);
+    font-weight: 300;
+}
+.discom-user-name {
+    font-weight: 300;
+    font-size: 13px
+}
+.discom-date {
+    font-weight: 300;
+}
+}
